@@ -1,0 +1,230 @@
+@charset "UTF-8";
+* {
+  padding: 0 ;
+  margin: 0;
+  	color: #800000;
+}
+
+body {
+
+	background-color: #FFFF99
+
+	}
+
+	h3{
+	font-size: 30px;
+
+	}
+ol{
+  list-style-image: url(image/icon.png);
+}
+	li{
+	list-style-type: disc;
+    font-size: 20px;
+	}
+.text-aline-center{
+  text-align:center;
+}
+.wrapper {
+  background-color: #FFFF99;
+  height: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+/*白枠*/
+.login {
+  width: 1000px;
+  padding: 30px 50px;
+  margin: 30px auto;
+  background: #ffffff;
+}
+.tips {
+  width: 300px;
+  padding: 30px 50px;
+  margin: 30px auto;
+  background: #ffffff;
+}
+.form{
+  padding: 0 30%;
+}
+.quiz-form{
+  padding: 0 5%;
+}
+.top-text{
+  padding: 10px 0;
+  margin: 10px 0;
+}
+.text-box+ {
+  padding: 10px 0;
+}
+.text-box {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.text-coment {
+  padding: 0 30px 0 0 ;
+}
+/*******************ボタン***********************/
+.btn{
+  margin: 10px 0 ;
+}
+.btn-sticky {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #f7f7f7;
+  border-left: solid 6px #ff7c5c;/*左線*/
+  color: #ff7c5c;/*文字色*/
+  font-weight: bold;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+}
+.btn-sticky:active {
+  box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+  transform: translateY(2px);
+}
+
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 5em;
+  text-decoration: none;
+  background: #f5ffe6;/*ボタン色*/
+  color: #ff0000;
+  border-bottom: solid 4px #fcf170;
+  border-radius: 100px;
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+/*******************クイズ一覧***********************/
+table{
+  border-collapse:collapse;
+  margin:0 auto;
+}
+th{
+  color:#800000;
+}
+td{
+  border-bottom:1px dashed #999;
+}
+th,tr:last-child td{
+  border-bottom:2px solid #800000;
+}
+td,th{
+  padding:10px;
+}
+/******************ヒント************************/
+.box{
+    padding: 0.2em 1em;
+    margin: 1em 0;
+    background: #FFFF99;
+    box-shadow: 0px 0px 0px 10px #FFFF99;
+    border: dashed 2px white;
+}
+.box14 p {
+    margin: 0;
+    padding: 0;
+}
+
+/******************************************/
+.login-coment {
+  padding: 15px 0 0 0 ;
+}
+.presentfont{
+	font-size: 20px;
+	color: #ff7c5c;/*文字色*/
+}
+
+/******************************************/
+/*セレクトボックス*/
+
+.cp_ipselect {
+	position: relative;
+	width: 500px;
+	margin: 2em auto;
+	text-align: center;
+}
+.cp_sl06 {
+	position: relative;
+	font-family: inherit;
+	background-color: transparent;
+	width: 500px;
+	padding: 10px 10px 10px 0;
+	font-size: 18px;
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0, 0.3);
+}
+.cp_sl06:focus {
+	outline: none;
+	border-bottom: 1px solid rgba(0,0,0, 0);
+}
+.cp_ipselect .cp_sl06 {
+	appearance: none;
+	-webkit-appearance:none
+}
+.cp_ipselect select::-ms-expand {
+	display: none;
+}
+.cp_ipselect:after {
+	position: absolute;
+	top: 18px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid rgba(0, 0, 0, 0.3);
+	pointer-events: none;
+}
+.cp_sl06_selectlabel {
+	color: rgba(0,0,0, 0.5);
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 0;
+	top: 10px;
+	transition: 0.2s ease all;
+}
+.cp_sl06:focus ~ .cp_sl06_selectlabel, .cp_sl06:valid ~ .cp_sl06_selectlabel {
+	color: #da3c41;
+	top: -20px;
+	transition: 0.2s ease all;
+	font-size: 14px;
+}
+.cp_sl06_selectbar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.cp_sl06_selectbar:before, .cp_sl06_selectbar:after {
+	content: '';
+	height: 2px;
+	width: 0;
+	bottom: 1px;
+	position: absolute;
+	background: #da3c41;
+	transition: 0.2s ease all;
+}
+.cp_sl06_selectbar:before {
+	left: 50%;
+}
+.cp_sl06_selectbar:after {
+	right: 50%;
+}
+.cp_sl06:focus ~ .cp_sl06_selectbar:before, .cp_sl06:focus ~ .cp_sl06_selectbar:after {
+	width: 50%;
+}
+.cp_sl06_highlight {
+	position: absolute;
+	top: 25%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
