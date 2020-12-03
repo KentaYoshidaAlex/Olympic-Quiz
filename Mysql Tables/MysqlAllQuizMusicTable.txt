@@ -1,0 +1,17 @@
+ #ALLQuizMusicテーブル作成
+
+drop table if exists ALLQuizMusic;
+ create table ALLQuizMusic
+( correctS varchar(100),
+ gameOverS varchar(100),
+ congratulationsS varchar(100),
+ congratulationsS2 varchar(100),
+ no integer unique auto_increment
+);
+
+ # 全問題の共通音声パスをinsert
+ insert into AllQuizMusic ( correctS, gameOverS, congratulationsS, congratulationsS2 )values
+ ( 'AllQuizMusic/correct1.mp3', 'AllQuizMusic/gameOver.mp3' , 
+'AllQuizMusic/people-performance-cheer1.mp3', 'AllQuizMusic/congra2.mp3' );
+
+

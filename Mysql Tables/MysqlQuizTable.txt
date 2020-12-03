@@ -1,0 +1,313 @@
+
+ # quizテーブル作成
+ drop table if exists quiz; 
+ create table quiz( mainGenre varchar(30), 
+                            subGenre varchar(30), 
+                            no integer unique auto_increment, 
+                            question varchar(200),
+                            answer varchar(20), 
+                            hint varchar(200), 
+                            choice1 varchar(30), 
+                            choice2 varchar(30), 
+                            choice3 varchar(30), 
+                            choice4 varchar(30), 
+                            image varchar(30), 
+                            pass varchar(100) default null) ; 
+
+ # Greeting
+ # hello
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','hello', 'スペイン語で「こんにちは」は?', 'ブエナスタルデス', '秋○○は嫁に食わすな/ タル○○ソース→○に入る言葉が入っています',  'グラシアス', 'スラマッシアン', 'ブエナスタルデス', 'ブエナスノーチェス', 'image/hello.jpeg', 'greetingMusicHello/Spanish-Hello.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','hello', 'ドイツ語で「こんにちは」は?', 'グーテンターク', '数字が入っています',  'ダンケシェン', 'グラッツェ', 'ボンジュール', 'グーテンターク', 'image/hello.jpeg', 'greetingMusicHello/GermanHello.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','hello', 'ヒンドゥー語で「こんにちは」は?', 'ナマステ', '○○中継のミュージック○○ーション！→○に入る言葉が入っています',  'サワディーカップ', 'ナマステ', 'タンキュー', 'テレマカシ', 'image/hello.jpeg', 'greetingMusicHello/HindoHello.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','hello', 'フランス語で「こんにちは」は?', 'ボンジュール', 'お○休み＋数字',  'ボンジュール', 'メルシー', 'ボンジュルネ', 'グラッツェ', 'image/hello.jpeg', 'greetingMusicHello/FranceHello.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','hello', 'インドネシア語で「こんにちは」は?', 'スラマッシアン', '小さい「ッ」が入ります',  'スラマッシアン', 'マガンダング　ハーポン', 'スラマッパタン', 'トゥリマカシ', 'image/hello.jpeg', 'greetingMusicHello/IndonesiaHello.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','hello', 'マレー語（マレーシア）で「こんにちは」は?', 'スラマッパタン', '小さい「ッ」が入ります',  'スラマッシアン', 'ナマステ', 'スラマッパタン', 'サマサマ', 'image/hello.jpeg', 'greetingMusicHello/MallayHello.mp3') ;
+insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','hello', 'ベトナム語で「こんにちは」は?', 'シンチャオ', '新しいイタリア語の挨拶？',  'ミンガラーバ', 'サバイディー', 'サイン　バイヌー', 'シンチャオ', 'image/hello.jpeg', 'greetingMusicHello/VetnamHello.mp3') ;
+insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','hello', 'ロシア語で「こんにちは」は?', 'ズドラーストヴィチェ', '濁点と小文字が多いよ',  'ズドラーストヴィチェ', 'フヴァーラ', 'スパシーバ', 'ズドラーヴォ', 'image/hello.jpeg', 'greetingMusicHello/RussiaHello.mp3') ;
+insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','hello', 'スワヒリ語で「こんにちは」は?', 'ハバリザムチャーナ', 'そんな無茶な、みたいな言葉です',  'ハバリザムチャーナ', 'アサンテ', 'スオスダイ', 'サインバイヌー', 'image/hello.jpeg', 'greetingMusicHello/SwahiliHello.mp3') ;
+insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','hello', 'ポルトガル語で「こんにちは」は?', 'ボアタルジ', '何かの真ん中に当たりました',  'ボアタルジ', 'ズドラーヴォ', 'オブリガード', 'アサンテ', 'image/hello.jpeg', 'greetingMusicHello/PortuguseHello.mp3') ;
+insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','hello', 'イタリア語で「こんにちは」は?', 'チャオ', '短く可愛い発音です',  'グラッツェ', 'ボンジュルネ', 'チャオ', 'オラ', 'image/hello.jpeg', 'greetingMusicHello/ItaliaHello.mp3') ;
+
+
+
+ # thankYou
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','thankYou', 'スペイン語で「ありがとう」は?', 'グラシアス', '揺れてそうな言葉です',  'メルシー', 'ダンケシェン', 'グラシアス', 'オラ', 'image/thankYou.jpeg', 'greetingMusicFiles/SpanishThankYou.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','thankYou', 'イタリア語で「ありがとう」は?', 'グラッツェ', '揺れてそうな言葉です',  'メルシー', 'ダンケシェン', 'グラッツェ', 'チャオ', 'image/thankYou.jpeg', 'greetingMusicFiles/ItaliaThankYou.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','thankYou', 'ドイツ語で「ありがとう」は?', 'ダンケシェン', '「フランケンシュタイン」みたいな響きです',  'メルシー', 'ダンケシェン', 'グラシアス', 'フバーラ', 'image/thankYou.jpeg', 'greetingMusicFiles/GermanThankYou.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','thankYou', 'フランス語で「ありがとう」は?', 'メルシー', '「健康」を英語で言った時みたいな響きです',  'ダンケ', 'グラッツェ', 'ボンジュール', 'メルシー', 'image/thankYou.jpeg', 'greetingMusicFiles/FranceThankYou.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','thankYou', 'スワヒリ語で「ありがとう」は?', 'アサンテ', '一日の始まりのような言葉です',  'ハバリザムチャーナ', 'ガムォン', 'ウーエナスィクンジェマ', 'アサンテ', 'image/thankYou.jpeg', 'greetingMusicFiles/SwahiliThankYou.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','thankYou', 'インドネシア語で「ありがとう」は?', 'テレマカシ', '最初の２文字はマザー・○○サ',  'テレマカシ', 'コープンカップ', 'サラマッポ', 'ミンガラーバ', 'image/thankYou.jpeg', 'greetingMusicFiles/IndonessiaThankYou.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','thankYou', 'タガログ語で「ありがとう」は?', 'サラマットゥ', '英語に当てはめるとplate + matt',  'アサンテ', 'コープンカップ', 'グラシアス', 'サラマットゥ', 'image/thankYou.jpeg', 'greetingMusicFiles/PhillipineThankYou.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','thankYou', 'ロシア語で「ありがとう」は?', 'スパシーバ', '○に入る言葉を合わせると… ○○ワールド + トラン○○○',  'フヴァーラ', 'ズドラーストヴィチェ', 'スパシーバ', 'ズドラーヴォ', 'image/thankYou.jpeg', 'greetingMusicFiles/RussiaThankYou.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','thankYou', 'ベトナム語で「ありがとう」は?', 'カムオン', '「こっちに来て」を英語で言う時の発音に似ています',  'シンチャオ', 'ミンガラーバ', 'アサンテ', 'カムオン', 'image/thankYou.jpeg', 'greetingMusicFiles/VetnamThankYou.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','thankYou', '韓国語で「ありがとう」は?', 'カムソハムニダ', 'お肉の名前が隠れています',  'アンニョンハセヨ', 'チョウハルポネセヨ', 'サランヘヨ', 'カムソハムニダ', 'image/thankYou.jpeg', 'greetingMusicFiles/koreaThankYou.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','thankYou', 'ポルトガル語で「ありがとう」は?', '（男性が言う場合）オブリガード/ （女性が言う場合）オブリガーダ', '○＋防御/ ○+アフリカの国名',  '（男性が言う場合）コープンカップ/ （女性が言う場合）コープンカー', '（男性が言う場合）オブリガード/ （女性が言う場合）オブリガーダ', '（男性が言う場合）コプチャイ/ （女性が言う場合）コプチャライ', '（男性が言う場合）チェーズーベー/ （女性が言う場合）チェーズーティン', 'image/thankYou.jpeg', 'greetingMusicFiles/PotuguseThankYou.mp3') ;
+
+ # haveANiceDay
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','haveANiceDay', 'スペイン語で「よい一日を」は?', 'ケテンガスン ブエンディーア', 'どこかに数字が入っています',  'ブオナジョルナータ', 'ケテンガスン ブエンディーア', 'ボンジュルネ', 'ズドラーヴォ', 'image/haveANiceDay.jpeg', 'HaveANiceDayFiles/SpainHaveANiceDay.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','haveANiceDay', 'フランス語で「よい一日を」は?', 'ボンジュルネ', 'お○休み＋○ッサンス→○に入る言葉が含まれています',  'ボンジュール', 'ボンジョールノ', 'ブオナジョルナータ', 'ボンジュルネ', 'image/haveANiceDay.jpeg', 'HaveANiceDayFiles/FranceHaveANiceDay.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','haveANiceDay', 'ドイツ語で「よい一日を」は?', 'アイネンシューネンターク', '同じ２文字が二回入ります',  'ケテンガブエンディーア', 'アイネンシューネンターク', 'ブオナジョルナータ', 'ズドラーストヴィチ', 'image/haveANiceDay.jpeg', 'HaveANiceDayFiles/GermanHaveANiceDay.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','haveANiceDay', 'タイ語で「よい一日を」は?', 'チョークディーナカップ', '教室で先生が使いそうな言葉が入っています',  'チュクモトゥネイ　トープラン', 'ジュンパラッギ', 'ソークディー', 'チョークディーナカップ', 'image/haveANiceDay.jpeg', 'HaveANiceDayFiles/ThaiHaveANiceDay.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','haveANiceDay', 'インドネシア語で「よい一日を」は?', 'スモガハリカム　ムニュナンカン', '長めのフレーズです',  
+'スモガハリカム　ムニュナンカン', 'ジュンパラッギ', 'フィルミレンゲ', 'インガット カパラギ',
+'image/haveANiceDay.jpeg', 'HaveANiceDayFiles/IndonesianHaveANiceDay.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','haveANiceDay', 'イタリア語で「よい一日を」は?', 'ブオナジョルナータ', '長めのフレーズです',  'ボンジュルネ', 'ズドラーヴォ', 'ボンジョルノ', 'ブオナジョルナータ', 'image/haveANiceDay.jpeg', 'HaveANiceDayFiles/ItaliaHaveANiceDay.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','haveANiceDay', 'ポルトガル語で「よい一日を」は?', 'テンヤ ウン ボンジア', 'どこかに数字が入っています',  'テンヤ ウン ボンジア', 'オブリガード', 'ケテンガブエンディーア', 'ジャリンムティ ブリイアタンダン', 'image/haveANiceDay.jpeg', 'HaveANiceDayFiles/PortuguseHaveANiceDay.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','haveANiceDay', 'ロシア語で「よい一日を」は?', 'ハローシェヴォ ドィニャー', '小文字、濁点、伸ばし棒が沢山です',  'ハローシェヴォ ドィニャー', 'スパシーバ', 'ズドラーストヴィチェ', 'ジャリンムティ ブリイアタンダン', 'image/haveANiceDay.jpeg', 'HaveANiceDayFiles/RussiaHaveANiceDay.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','haveANiceDay', 'ベトナム語で「よい一日を」は?', 'チュクモトゥネイ　トープラン', '10個の計画？',  'カムオン', 'ソークディー', 'チュクモトゥネイ　トープラン', 'バヤルディ', 'image/haveANiceDay.jpeg', 'HaveANiceDayFiles/VetnamHaveANiceDay.mp3') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image, pass ) values 
+ ( 'Greeting','haveANiceDay', 'スワヒリ語で「よい一日を」は?', 'ウゥエナスィ クンジェンマ', '↑には何もなかったです( ・∇・)',  'ハバリザムチャーナ', 'テンニャウン ボンジア', 'ミンガラーバ', 'ウゥエナスィ クンジェンマ', 'image/haveANiceDay.jpeg', 'HaveANiceDayFiles/SwahiliHaveANiceDay.mp3') ;
+ 
+
+
+ # Olympic
+ # origin
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','origin', '１バレーボールの発祥の地はどこでしょう？', 'アメリカ:カルフォルニア州', 'Googleの本社があるとこでも有名な場所！',  'アメリカ:カルフォルニア州', 'アメリカ:NY州 ', 'アメリカ:テキサス州', 'アメリカ:ミシガン州', 'image/origin.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','origin',  '２バレーボールの発祥の地はどこでしょう？', 'アメリカ:カルフォルニア州', 'Googleの本社があるとこでも有名な場所！',  'アメリカ:カルフォルニア州', 'アメリカ:NY州 ', 'アメリカ:テキサス州', 'アメリカ:ミシガン州', 'image/origin.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','origin',  '３バレーボールの発祥の地はどこでしょう？', 'アメリカ:カルフォルニア州', 'Googleの本社があるとこでも有名な場所！',  'アメリカ:カルフォルニア州', 'アメリカ:NY州 ', 'アメリカ:テキサス州', 'アメリカ:ミシガン州', 'image/origin.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','origin',  '4バレーボールの発祥の地はどこでしょう？', 'アメリカ:カルフォルニア州', 'Googleの本社があるとこでも有名な場所！',  'アメリカ:カルフォルニア州', 'アメリカ:NY州 ', 'アメリカ:テキサス州', 'アメリカ:ミシガン州', 'image/origin.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','origin',  '５バレーボールの発祥の地はどこでしょう？', 'アメリカ:カルフォルニア州', 'Googleの本社があるとこでも有名な場所！',  'アメリカ:カルフォルニア州', 'アメリカ:NY州 ', 'アメリカ:テキサス州', 'アメリカ:ミシガン州', 'image/origin.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','origin',  '６バレーボールの発祥の地はどこでしょう？', 'アメリカ:カルフォルニア州', 'Googleの本社があるとこでも有名な場所！',  'アメリカ:カルフォルニア州', 'アメリカ:NY州 ', 'アメリカ:テキサス州', 'アメリカ:ミシガン州', 'image/origin.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','origin',  '7バレーボールの発祥の地はどこでしょう？', 'アメリカ:カルフォルニア州', 'Googleの本社があるとこでも有名な場所！',  'アメリカ:カルフォルニア州', 'アメリカ:NY州 ', 'アメリカ:テキサス州', 'アメリカ:ミシガン州', 'image/origin.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','origin',  '8バレーボールの発祥の地はどこでしょう？', 'アメリカ:カルフォルニア州', 'Googleの本社があるとこでも有名な場所！',  'アメリカ:カルフォルニア州', 'アメリカ:NY州 ', 'アメリカ:テキサス州', 'アメリカ:ミシガン州', 'image/origin.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','origin',  '9バレーボールの発祥の地はどこでしょう？', 'アメリカ:カルフォルニア州', 'Googleの本社があるとこでも有名な場所！',  'アメリカ:カルフォルニア州', 'アメリカ:NY州 ', 'アメリカ:テキサス州', 'アメリカ:ミシガン州', 'image/origin.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','origin',  '10バレーボールの発祥の地はどこでしょう？', 'アメリカ:カルフォルニア州', 'Googleの本社があるとこでも有名な場所！',  'アメリカ:カルフォルニア州', 'アメリカ:NY州 ', 'アメリカ:テキサス州', 'アメリカ:ミシガン州', 'image/origin.jpeg') ;
+
+ # location
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','location',  '１,2012年オリンピック開催国はどこでしょう？', 'イギリス', '2020年EU離脱国',  'イギリス', 'フランス ', 'オランダ', 'イタリア', 'image/location.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','location',  '2,2012年オリンピック開催国はどこでしょう？', 'イギリス', '2020年EU離脱国',  'イギリス', 'フランス ', 'オランダ', 'イタリア', 'image/location.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','location',  '3,2012年オリンピック開催国はどこでしょう？', 'イギリス', '2020年EU離脱国',  'イギリス', 'フランス ', 'オランダ', 'イタリア', 'image/location.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','location',  '4,2012年オリンピック開催国はどこでしょう？', 'イギリス', '2020年EU離脱国',  'イギリス', 'フランス ', 'オランダ', 'イタリア', 'image/location.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','location',  '5,2012年オリンピック開催国はどこでしょう？', 'イギリス', '2020年EU離脱国',  'イギリス', 'フランス ', 'オランダ', 'イタリア', 'image/location.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','location',  '6,2012年オリンピック開催国はどこでしょう？', 'イギリス', '2020年EU離脱国',  'イギリス', 'フランス ', 'オランダ', 'イタリア', 'image/location.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','location',  '7,2012年オリンピック開催国はどこでしょう？', 'イギリス', '2020年EU離脱国',  'イギリス', 'フランス ', 'オランダ', 'イタリア', 'image/location.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','location',  '8,2012年オリンピック開催国はどこでしょう？', 'イギリス', '2020年EU離脱国',  'イギリス', 'フランス ', 'オランダ', 'イタリア', 'image/location.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','location',  '9,2012年オリンピック開催国はどこでしょう？', 'イギリス', '2020年EU離脱国',  'イギリス', 'フランス ', 'オランダ', 'イタリア', 'image/location.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','location',  '10,2012年オリンピック開催国はどこでしょう？', 'イギリス', '2020年EU離脱国',  'イギリス', 'フランス ', 'オランダ', 'イタリア', 'image/location.jpeg') ;
+
+ # player
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','player',  '１,2012年レスリング女子フリースタイル55kg級で金メダルを獲得した選手は？', '吉田 沙保里', '霊長類最強と言われている',  '吉田 沙保里', '鈴木 聡美', '伊調 馨', '小原 日登美', 'image/player.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','player',  '2,2012年レスリング女子フリースタイル55kg級で金メダルを獲得した選手は？', '吉田 沙保里', '霊長類最強と言われている',  '吉田 沙保里', '鈴木 聡美', '伊調 馨', '小原 日登美', 'image/player.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','player',  '3,2012年レスリング女子フリースタイル55kg級で金メダルを獲得した選手は？', '吉田 沙保里', '霊長類最強と言われている',  '吉田 沙保里', '鈴木 聡美', '伊調 馨', '小原 日登美', 'image/player.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','player',  '4,2012年レスリング女子フリースタイル55kg級で金メダルを獲得した選手は？', '吉田 沙保里', '霊長類最強と言われている',  '吉田 沙保里', '鈴木 聡美', '伊調 馨', '小原 日登美', 'image/player.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','player',  '5,2012年レスリング女子フリースタイル55kg級で金メダルを獲得した選手は？', '吉田 沙保里', '霊長類最強と言われている',  '吉田 沙保里', '鈴木 聡美', '伊調 馨', '小原 日登美', 'image/player.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','player',  '6,2012年レスリング女子フリースタイル55kg級で金メダルを獲得した選手は？', '吉田 沙保里', '霊長類最強と言われている',  '吉田 沙保里', '鈴木 聡美', '伊調 馨', '小原 日登美', 'image/player.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','player',  '7,2012年レスリング女子フリースタイル55kg級で金メダルを獲得した選手は？', '吉田 沙保里', '霊長類最強と言われている',  '吉田 沙保里', '鈴木 聡美', '伊調 馨', '小原 日登美', 'image/player.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','player',  '8,2012年レスリング女子フリースタイル55kg級で金メダルを獲得した選手は？', '吉田 沙保里', '霊長類最強と言われている',  '吉田 沙保里', '鈴木 聡美', '伊調 馨', '小原 日登美', 'image/player.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','player',  '9,2012年レスリング女子フリースタイル55kg級で金メダルを獲得した選手は？', '吉田 沙保里', '霊長類最強と言われている',  '吉田 沙保里', '鈴木 聡美', '伊調 馨', '小原 日登美', 'image/player.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','player',  '10,2012年レスリング女子フリースタイル55kg級で金メダルを獲得した選手は？', '吉田 沙保里', '霊長類最強と言われている',  '吉田 沙保里', '鈴木 聡美', '伊調 馨', '小原 日登美', 'image/player.jpeg') ;
+ 
+ # olympicelse
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','olympicelse',  '１,日本選手が初めてメダルを獲得した競技とは？', 'テニス', '「庭球」とも呼ばれている',  'テニス', 'バレーボール', '柔道', 'フェンシング', 'image/olympicelse.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','olympicelse',  '2,日本選手が初めてメダルを獲得した競技とは？', 'テニス', '「庭球」とも呼ばれている',  'テニス', 'バレーボール', '柔道', 'フェンシング', 'image/olympicelse.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','olympicelse',  '3,日本選手が初めてメダルを獲得した競技とは？', 'テニス', '「庭球」とも呼ばれている',  'テニス', 'バレーボール', '柔道', 'フェンシング', 'image/olympicelse.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','olympicelse',  '4,日本選手が初めてメダルを獲得した競技とは？', 'テニス', '「庭球」とも呼ばれている',  'テニス', 'バレーボール', '柔道', 'フェンシング', 'image/olympicelse.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','olympicelse',  '5,日本選手が初めてメダルを獲得した競技とは？', 'テニス', '「庭球」とも呼ばれている',  'テニス', 'バレーボール', '柔道', 'フェンシング', 'image/olympicelse.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','olympicelse',  '6,日本選手が初めてメダルを獲得した競技とは？', 'テニス', '「庭球」とも呼ばれている',  'テニス', 'バレーボール', '柔道', 'フェンシング', 'image/olympicelse.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','olympicelse',  '7,日本選手が初めてメダルを獲得した競技とは？', 'テニス', '「庭球」とも呼ばれている',  'テニス', 'バレーボール', '柔道', 'フェンシング', 'image/olympicelse.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','olympicelse',  '8,日本選手が初めてメダルを獲得した競技とは？', 'テニス', '「庭球」とも呼ばれている',  'テニス', 'バレーボール', '柔道', 'フェンシング', 'image/olympicelse.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','olympicelse',  '9,日本選手が初めてメダルを獲得した競技とは？', 'テニス', '「庭球」とも呼ばれている',  'テニス', 'バレーボール', '柔道', 'フェンシング', 'image/olympicelse.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Olympic','olympicelse',  '10,日本選手が初めてメダルを獲得した競技とは？', 'テニス',  '「庭球」とも呼ばれている',  'テニス', 'バレーボール', '柔道', 'フェンシング', 'image/olympicelse.jpeg') ;
+
+
+
+ # Japanese
+ # japaneseTourism
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Japanese','JapaneseTourism',  '神秘的で壮観な赤い千本鳥居や狛狐で有名な場所はどこでしょう？', '伏見稲荷大社(京都)', '狐の好物は油揚げです',  '伏見稲荷大社(京都)', '縮景園（広島県）', '永観堂禅林寺(京都)', '宮島(広島)', 'image/japaneseTourism.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Japanese','JapaneseTourism',  '1400年近い歴史を持ち、江戸時代には庶民文化の拠点として発展し、沢山の店が立ち並ぶお寺はどこでしょう？', '浅草寺(東京)', '赤い大提灯の雷門が有名です',  '愛宕念仏寺(京都)', '宮島(広島)', '浅草寺(東京)', '長谷寺(神奈川)', 'image/japaneseTourism.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Japanese','JapaneseTourism',  '大阪湾の入口を防衛するため、明治時代から砲台などの軍事施設が築かれていた、戦後、施設は廃棄されたものの当時の遺構がそのままの形で残っている島の名前は？', '友ヶ島(和歌山)', '船の苫（とま）を海に投げ、その流れのまま進めが由来',  '笠戸島（山口）', '宮島(広島)', '江の島（神奈川）', '友ヶ島(和歌山)', 'image/japaneseTourism.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Japanese','JapaneseTourism',  '大隅半島の佐多岬から、南南西に約60キロメートルの海上に位置する、白谷雲水峡はもののけ姫の舞台として有名な島の名前は？', '屋久島(鹿児島)', 'この島で産し樹齢が1000年を越えるものをヤクスギと呼んでいる',  '屋久島(鹿児島)', '女木島（香川）', '篠島（愛知）', '与那国島（沖縄）', 'image/japaneseTourism.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Japanese','JapaneseTourism',  '徳川家康の墓所であり、彼を神として祀る神社、陽明門や三猿、眠り猫などの彫刻が有名', '日光東照宮(栃木)', '東から照らす神社という意味',  '伊勢神宮内宮(三重)', '日光東照宮(栃木)', '出雲大社（島根）', '善光寺（長野）', 'image/japaneseTourism.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Japanese','JapaneseTourism',  '年間来場者数は約1,350万人で、世界のテーマパーク・アミューズメントパークの中では世界5位のテーマパークの名前は？', '東京ディズニーシー(千葉)', 'キャッチコピーは冒険とイマジネーションの海',  'ユニバーサル・スタジオ・ジャパン(大阪)', '東京ディズニーランド(千葉)', '東京ディズニーシー(千葉)', 'ひらかたパーク(大阪)', 'image/japaneseTourism.jpeg') ;
+
+
+ # localSpecialty
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Japanese','localSpecialty',  'アジやイワシに味噌やネギなどの薬味を加え、粘り気が出るまで叩いた、房総半島沿岸が発祥の郷土料理はどれでしょう？', 'なめろう', '名前の由来は料理を盛っていた皿についた身まで舐めるほど美味しいことから',  '魚飯（ぎょはん）', 'しょっつる', 'ふなんこぐい', 'なめろう', 'image/localSpecialty.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Japanese','localSpecialty',  'ゆるく水溶きした小麦粉を鉄板で調理して食べる東京近郊のローカルフードはどれでしょう？', 'もんじゃ焼き', '名前の由来は焼くときにタネで文字を書いて遊んだことから「文字（もんじ）焼き」が訛った言葉',  'もんじゃ焼き', 'お好み焼き', '明石焼き', '広島焼', 'image/localSpecialty.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Japanese','localSpecialty',  'ゆるく水溶きした小麦粉を鉄板で調理して食べる東京近郊のローカルフードはどれでしょう？', 'もんじゃ焼き', '名前の由来は焼くときにタネで文字を書いて遊んだことから「文字（もんじ）焼き」が訛った言葉',  'もんじゃ焼き', 'お好み焼き', '明石焼き', '広島焼', 'image/localSpecialty.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Japanese','localSpecialty',  '群馬県桐生市の郷土料理のひとつで、幅が広く薄い平打ちうどんはどれでしょう？', 'ひもかわうどん', '芋川うどんがルーツの説がある',  'きしめん', '稲葉うどん', 'ひもかわうどん', '耳うどん', 'image/localSpecialty.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Japanese','localSpecialty',  '日本橋大伝馬町の宝田恵比寿神社の例祭で売られていた“縁起物”大根の麹漬の一種', 'べったら漬け', '「べったり付くぞ～」と囃し立てながら持ち帰ったことから',  'べったら漬け', 'いぶりがっこ', '千枚漬け', '野沢菜', 'image/localSpecialty.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Japanese','localSpecialty',  '盛岡三大麺として有名な盛岡冷麺、わんこそば、もう一つは？', 'じゃじゃ麺', '炸醤麺（ジャージアンミエン）を元にアレンジを繰り返し出来た郷土料理',  'にゃんこうどん', 'すいとん', 'ソーキそば', 'じゃじゃ麺', 'image/localSpecialty.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Japanese','localSpecialty',  '八丁味噌などの豆味噌のベースに店によって鰹出汁、砂糖など様々なものを加えた独自のタレを豚カツにかけたものは？', '味噌かつ', '「名古屋めし」の一つ',  '名古屋コーチン', '味噌かつ', 'ひつまぶし', '味噌おでん', 'image/localSpecialty.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Japanese','localSpecialty',  'にら、ねぎ、キャベツなどの野菜がたっぷり入ったヘルシーで野菜の旨味と甘味が味わえるのが特徴の餃子はどれでしょう？', '宇都宮餃子', '栃木県の県庁所在地には餃子の像があります',  '福島円盤餃子', '宇都宮餃子', '屋台餃子', '浜松餃子', 'image/localSpecialty.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Japanese','localSpecialty',  'アサリのむき身とネギを味噌で煮てご飯に乗せた東京名物はどれでしょう？', '深川めし', '深川エリアの漁師が船上でご飯に出汁ごとかけて食べられていた',  '深川めし', 'かやくご飯', 'どんどろけ飯', 'かてめし', 'image/localSpecialty.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Japanese','localSpecialty',  '魚がメインの具材の場合は水炊きの「チリ炊き」、鶏がメインの具材の場合はだし汁などで炊いた「ソップ炊き」と、炊き方にも決まりがある鍋料理はどれでしょう？', 'ちゃんこ鍋', '相撲力士の料理番が作る鍋料理のこと。',  'ちゃんこ鍋', 'もつ鍋', '水軍鍋', 'はりはり鍋', 'image/localSpecialty.jpeg') ;
+
+
+
+ # Conversation
+ # introduction 
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Conversation','introduction',  '日本へようこそ！ / Welcome _____ Japan!',  'to', '今話題の「GO ●●　キャンペーン」。●●に当てはまるのは？',  'in', 'to', 'at', 'with', 'image/introduction.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','introduction',  '出身はどちらですか？ / Where are you _____ ?', 'from', '「バイト探しは●●エー」というキャッチコピーの求人検索サイトもありますね。', 'from', 'in', 'country', 'come', 'image/introduction.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','introduction',  '（お礼を言われたことに対して）どういたしまして。 / You are _____ .',  'welcome', '直訳すると「歓迎」という意味になります。', 'welcome', 'pleasure', 'nice', 'no problem', 'image/introduction.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','introduction',  '日本にはどのくらい（の期間）滞在予定ですか？ / How _____ do you plan to stay?',  'long', 'どのくらいの「長さ」の期間か？を尋ねています。', 'far', 'days', 'many', 'long', 'image/introduction.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values 
+ ( 'Conversation','introduction',  '私は英語が話せます。/ I can _____ English. ', 'speak', 'コラムを読んでみましょう！', 'talk', 'say', 'speak', 'discuss', 'image/introduction.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','introduction',  '日本に来られるのは初めてですか？ / Is this your _____ time to visit Japan??', 'first', '飛行機にも「ビジネスクラス」や「●●クラス」がありますね。●●といえば？', 'one', 'first', 'fresh', 'new', 'image/introduction.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','introduction',  'お会いできて嬉しいです。 / I’m _____ to meet you.',   'glad',  'I’m “ happy” to meet you. と言い換えることもできます。', 'nice', 'surprised', 'glad', 'sad', 'image/introduction.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','introduction',  'なぜ日本にいらっしゃったのですか？ / _____ brings you to Japan? ',  'What',  '「”何が”きっかけで？」という意味になります。　※コラムも読んでみしょう！', 'Where', 'Who', 'How', 'What', 'image/introduction.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','introduction',  '日本での滞在を楽しんでください。 / Please _____ your stay in Japan.',   'enjoy', '“Please”の後にくるのは、動詞です。', 'enjoy', 'fun', 'wonderful', 'joyful', 'image/introduction.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','introduction',  'お話しできてよかったです。/ Good _____ to you!',   'talking', ' LINEでチャットする画面を「●●画面」といいます。正解は「●●ing」です。', 'meeting', 'talking', 'seeing', 'saying', 'image/introduction.jpeg' ) ;
+
+ # guide 
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Conversation','guide',  '(場所の名前)まで、どうやって行けるかを教えてくれませんか？ / Could you tell me _____ to get to (場所の名前)?',  'how', 'コラムを読んでみましょう！',  'how', 'when', 'what', 'there', 'image/guide.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','guide',  '～ブロック、まっすぐ進んでください。 / Go _____ for ～ blocks.', 'straight', ' 髪の毛がまっすぐな人は「●●ヘアー」ですね。', 'away', 'straight', 'right', 'left', 'image/guide.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','guide',  '～を右に曲がってください。 / Turn _____ at (目印).',  'right', '「その通りです」= “You are ●●.” という表現もあります。', 'left', 'right', 'light', 'corner', 'image/guide.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','guide',  '～を探しています。 / I’m _____ for ～.',  'looking', '“Good-●●” で、「見た目がいい」という意味です。', 'going', 'taking', 'finding', 'looking', 'image/guide.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values 
+ ( 'Conversation','guide',  '～に行きたいのですが。　/  I’d _____ to go to ～.', 'like', '好き = ●●', 'have', 'go', 'like', 'want', 'image/introduction.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','guide',  '助けが必要ですか？ / Do you need any _____?', 'help', '“●● me !!” で「助けて！」という意味になります。', 'people', 'help', 'hand', 'money', 'image/guide.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','guide',  '道に迷いましたか？ / Are you _____?',   'lost',  '「失った」という意味です。', 'lost', 'looking', 'missing', 'no way', 'image/guide.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','guide',  '（指で示しながら）あそこです！ / _____ there!',  'Over',  '名曲「虹の彼方に」 / ●●・ザ・レインボー', 'Next', 'Up', 'Over', 'Behind', 'image/guide.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','guide',  '歩いて～分くらいかかります。 / It _____ about ~ minutes on foot.',   'takes', '「ギブ・アンド・●●」　→　答えは、●●s です。', 'has', 'takes', 'walks', 'turns', 'image/introduction.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','guide',  'ついてきてください。/ Please _____ me.',   'follow', 'Twitterで芸能人を「●●」する。', 'with', 'come', 'follow', 'give', 'image/guide.jpeg' ) ;
+
+ # tourism
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Conversation','tourism',  'ここは〇〇で有名です。/ This place is _____ for ～.',  'famous', 'コラムを読んでみましょう！',  'surprise', 'amazing', 'famous', 'crowded', 'image/tourism.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','tourism',  'これは日本語でたこ焼きといいます。 / These are _____ “Takoyaki” in Japanese.', 'called', '●● = 呼ばれる', 'said', 'name', 'called', 'talked', 'image/tourism.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','tourism',  'これは778年に建てられました。/ This was _____ in 778.',  'built', 'コラムを読んでみましょう！', 'built', 'building', 'stand', 'made', 'image/tourism.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','tourism',  'この地域で人気のお土産は〇〇です。/ 〇〇 is popular _____ around this area.',  'souvenir', 'フランス語では「スヴニール」と読み、「思い出」を意味します。', 'goods', 'souvenir', 'item', 'thing', 'image/tourism.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values 
+ ( 'Conversation','tourism',  '〇〇は野菜料理です。/ 〇〇 is a _____ dish. ', 'vegetable', '野菜しか食べられないひとのことを「ベジタリアン」といいます。', 'vegetable', 'fish', 'meat', 'fresh', 'image/tourism.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','tourism',  'ここでは〇〇をおすすめします。　/　 I _____ 〇〇 here.', 'recommend', 'カタカナで「レコメンド」と表記することが多いです。', 'push', 'recommend', 'advise', 'let you have', 'image/tourism.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','tourism',  'これは地元のものですか。 / Are these _____ products?',   'local',  '地方のテレビ番組 = 「●●番組」', 'local', 'ground', 'base', 'original', 'image/tourism.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','tourism',  '観光案内所はどこですか。 / Where is the tourist _____ center? ',  'information',  'IT（情報技術） = 「●● Technology」のように、「情報」という意味でもあります。', 'guide', 'information', 'telephone', 'help', 'image/tourism.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','tourism',  '写真を撮ってあげましょうか？ / Shall I take a _____ of you?',   'picture', '“photo”とも言い換えることができます。', 'paper', 'camera', 'drawing', 'picture', 'image/tourism.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','tourism',  '両替所はどこですか。/ Where can I _____ money?',   'change', '両替 = お金を替える', 'replace', 'pay', 'get', 'change', 'image/tourism.jpeg' ) ;
+
+ # others
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image ) values 
+ ( 'Conversation','others',  'おめでとう！',  'Congratulations!', '一単語で表します。',  'Thank you!', 'Congratulations!', 'Good job!', 'You did it!', 'image/others.jpeg') ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','others',  'なんていい試合なんだ！/ _____ a great game!', 'What', 'コラムを読んでみましょう！', 'What', 'How', 'Why', 'Really', 'image/others.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','others',  'とてもワクワクしています。 / I am _____.',  'excited', '日本語でも、興奮することを「エキサイト」するといいます。', 'motivated', 'happy', 'disappointed', 'excited', 'image/others.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','others',  '（選手が点を入れた際などに）やった！ / He/she _____ it!',  'did', '“do”の過去形が入ります。', 'did', 'got', 'played', 'moved', 'image/others.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values 
+ ( 'Conversation','others',  '（あと少しで点を取れたシチュエーションなどで）もう少しだったのに！　/  He/she _____ got it! ', 'almost', '「ほとんど」達成できていた。という意味です。', 'has', 'finally', 'almost', 'close', 'image/others.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','others',  'その調子！ / _____ it going!', 'Keep', 'その調子を「保って」という意味です。', 'Keep', 'Play', 'Stand', 'Move', 'image/others.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','others',  '【ネットスラング】  「(笑)」、「ww」などの笑いを表現するのは？',   'lol',  ' laughing out loud（大笑いする）の略です。', 'omg', 'lol', 'IMO', 'FYI', 'image/others.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','others',  '【ネットスラング】　「神様～！」と言いたい時の表現は？',  'omg',  'Oh My God! の略です。', 'omg', 'btw', 'BFF', 'ASAP', 'image/others.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','others',  'おっと！',   'Oops!', 'カタカナで表記すると、「ウップス！」です。', 'Oops!', 'What!', 'Great!', 'Fantastic!', 'image/others.jpeg' ) ;
+ insert into quiz  ( mainGenre, subGenre, question, answer, hint, choice1, choice2, choice3, choice4, image )values
+ ( 'Conversation','others',  'ありえない！そんな！',   'No way!', '直訳すると、「道がない」という意味です。', 'Go for it!', 'Come on!', 'No way!', 'Up to you!', 'image/others.jpeg' ) ;
+

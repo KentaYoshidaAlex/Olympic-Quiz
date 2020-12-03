@@ -1,0 +1,52 @@
+#logテーブル作成
+
+ drop table if exists log; 
+
+create table log (
+  logNo      integer unique auto_increment,
+  userId         varchar(20),
+  mainGenre  varchar(20),
+  subGenre   varchar(20),
+  no         integer,
+  choice     varchar(20),
+  answer     varchar(20),
+  date timestamp not null default current_timestamp,
+  logRight      integer,
+  wrong      integer,
+  miss integer,
+  clear integer,
+  primary key (logNo)
+);
+
+
+#logテーブルにINSERT
+
+insert into log( 
+ userId,
+ mainGenre,
+ subGenre,
+ no,
+ choice,
+ answer,
+ date,
+ logRight,
+ wrong,
+ miss,
+ clear ) 
+ values(
+ 'userid2',
+ 'greeting',
+ 'hello',
+ 1,
+ '選択肢',
+ 'answer',
+ current_timestamp,
+ 1,
+ 1,
+ 0,
+ 1
+
+);
+
+
+
